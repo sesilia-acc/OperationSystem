@@ -9,11 +9,11 @@
 
 Langkah - langkah :
 1. Melihat informasi CPU :
-<img width="900" height="400" alt="lscpu" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lscpu.jpeg?raw=true"/>
+<p><img width="700" height="300" alt="lscpu" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lscpu.jpeg?raw=true"/></p>p
 2. Melihat penggunaan memori :
-<img width="800" height="350" alt="free-h" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/free-h.jpeg?raw=true"/>
+<p><img width="500" height="250" alt="free-h" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/free-h.jpeg?raw=true"/></p>
 3. Melihat informasi DMI/BIOS :
-<img width="900" height="400" alt="DMI" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/DMI.jpeg?raw=true"/>
+<p><img width="700" height="300" alt="DMI" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/DMI.jpeg?raw=true"/></p>
 
 ### Catat :
 1. Informasi CPU : 

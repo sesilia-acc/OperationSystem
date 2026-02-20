@@ -15,7 +15,8 @@ Langkah - langkah :
 3. Melihat informasi DMI/BIOS :
 <img width="900" height="400" alt="DMI" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/DMI.jpeg?raw=true"/>
 
-### Catat :
+### Latihan 2.1
+Catat :
 1. Informasi CPU : 
     a. Jumlah CPU(s) = 1
     b. Core/Thread = 1
@@ -39,3 +40,19 @@ Langkah - langkah :
 <img width="850" height="300" alt="daftar USB" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lsusb.jpeg?raw=true"/>
 5. Lihat topologi USB (tree) :
 <img width="850" height="300" alt="topologi USB" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lsusb-t.jpeg?raw=true"/>
+
+### Latihan 2.2
+Temukan 1 perangkat PCI (misal NIC) dan tuliskan: Vendor:Device ID (angka
+heksadesimal), nama driver/modul kernel, dan deskripsi singkat fungsinya.
+    a. NIC
+        Vendor:Device ID: 8086:100e
+        Nama driver/modul kernel = e1000
+        Fungsi = NIC digunakan sebagai jembatan antara komputer dan jaringan komputer. Vendor:Device ID berfungsi sebagai identitas dari perangkat keras yang tertanam dalam NIC. Sedangkan driver (software) berguna untuk penerjemah sistem operasi dan perangkat keras.
+
+## Praktikum 2.3 Identifikasi Storage dan Filesystem
+### Tujuan praktikum : memahami disk/partisi dan filesystem yang terpasang
+
+Langkah - langkah :
+1. Lihat daftar disk/partisi (block device dan filesystem) :
+2. Tampilkan UUID dan tipe filesystem
+3. Lihat mount point untuk root filesystem

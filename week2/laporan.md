@@ -54,11 +54,11 @@ heksadesimal), nama driver/modul kernel, dan deskripsi singkat fungsinya.
 
 Langkah - langkah :
 1. Lihat daftar disk/partisi :
-<img width="250" height="150" alt="daftar disk" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lsblk-f.jpeg?raw=true"/>
+<img width="600" height="300" alt="daftar disk" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lsblk-f.jpeg?raw=true"/>
 2. Tampilkan UUID dan tipe filesystem :
-<img width="400" height="150" alt="UUID dan tipe filesystem" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/uuid.jpeg?raw=true"/>
+<img width="800" height="600" alt="UUID dan tipe filesystem" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/uuid.jpeg?raw=true"/>
 3. Lihat mountpoint untuk root filesystem :
-<img width="200" height="100" alt="mountpoint" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/mountpoint.jpeg?raw=true"/>
+<img width="700" height="400" alt="mountpoint" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/mountpoint.jpeg?raw=true"/>
 
 ### Interpretasi cepat
 Jika findmnt / menunjukkan root berada di /dev/sda2, maka pada lsblk-f Anda bisa lihat tipe filesystem (misal ext4) dan UUID partisi tersebut.
@@ -71,13 +71,13 @@ Pada saat menjalankan perintah findmnt /, didapatkan bahwa root berada pada blok
 
 Langkah - langkah :
 1. Cek versi kernel :
-<img width="80" height="20" alt="versi kernel" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/versikernel.jpeg?raw=true"/>
+<img width="600" height="300" alt="versi kernel" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/versikernel.jpeg?raw=true"/>
 2. Tampilkan daftar modul aktif :
-<img width="200" height="130" alt="daftar modul aktif" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/modulaktif.jpeg?raw=true"/>
+<img width="800" height="400" alt="daftar modul aktif" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/modulaktif.jpeg?raw=true"/>
 3. Pilih salah satu modul (contoh aman: loop) dan lihat detailnya :
-<img width="350" height="200" alt="detail modul loop" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/modulloop.jpeg?raw=true"/>
+<img width="600" height="300" alt="detail modul loop" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/modulloop.jpeg?raw=true"/>
 4. Muat modul (jika belum aktif), lalu verifikasi :
-<img width="100" height="20" alt="verifikasi keaktifan modul loop" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/verifloop.jpeg?raw=true"/>
-    Modul loop sudah aktif, dibuktikan dengan status builtin pada modinfo loop dan verifikasi /proc/devices diketahui bahwa driver loop aktif pada mayor 7.
+    Modul loop sudah aktif, dibuktikan dengan status builtin pada modinfo loop dan verifikasi /proc/devices diketahui bahwa driver loop aktif pada mayor 7
+<img width="900" height="600" alt="verifikasi keaktifan modul loop" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/verifloop.jpeg?raw=true"/>
 5. (Opsional) lihat pesan kernel terbaru :
 <img width="980" height="890" alt="pesan kernel terbaru" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/pesankernel.jpeg?raw=true"/>

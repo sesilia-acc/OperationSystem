@@ -17,12 +17,8 @@ Langkah - langkah :
 
 ### Latihan 2.1
 Catat :
-1. Informasi CPU : 
-<h4>a. Jumlah CPU(s) = 1<h4>
-<h4>b. Core/Thread = 1<h4>
-2. Penggunaan memori :
-<h4>a. Total RAM = 1.9Gi<h4>
-<h4>b. Total Swap = 2.0Gi<h4>
+1. Informasi CPU : (a) Jumlah CPU(s) = 1 (b) Core/Thread = 1
+2. Penggunaan memori : (a) Total RAM = 1.9Gi (b) Total Swap = 2.0Gi
 3. Perbedaan RAM Vs Swap :
     RAM adalah tempat penyimpanan data sementara yang bekerja untuk meproses aplikasi yang sedang berjalan, dan isinya akan hilang saat komputer mati. Sedangkan swap adalah media penyimpanan cadangan yang berfungsi untuk membantu sistem tetap berjalan apabila kapasitas RAM mulai penuh, cara kerja swap lebih lambat dibandingkan dengan RAM.
 
@@ -44,10 +40,11 @@ Langkah - langkah :
 ### Latihan 2.2
 Temukan 1 perangkat PCI (misal NIC) dan tuliskan: Vendor:Device ID (angka
 heksadesimal), nama driver/modul kernel, dan deskripsi singkat fungsinya.
-<h4>a. Perangkat NIC (Ethernet Controller)<h4>
-    <h4>Vendor:Device ID: 8086:100e<h4>
-    <h4>Nama driver/modul kernel : e1000<h4>
-    <h4>Deskripsi fungsi : NIC berperan sebagai jembatan antara komputer dengan jaringan komputer yang biasanya dikirim melalui kabel LAN (ethernet). Vendor:Device ID adalah identitas dari perangkat yang terpasang, tujuannya adalah agar sistem operasi dapat mengenali perangkat dan tidak salah memberikan perintah. Sedangkan driver bertugas sebagai penerjemah antara sistem operasi dan perangkat keras.<h4>
+#### Jawaban :
+(a) Nama perangkat NIC (Ethernet Controller)
+(b) Vendor:Device ID: 8086:100e
+(c) Nama driver/modul kernel : e1000
+(d) Deskripsi fungsi : NIC berperan sebagai jembatan antara komputer dengan jaringan komputer yang biasanya dikirim melalui kabel LAN (ethernet). Vendor:Device ID adalah identitas dari perangkat yang terpasang, tujuannya adalah agar sistem operasi dapat mengenali perangkat dan tidak salah memberikan perintah. Sedangkan driver bertugas sebagai penerjemah antara sistem operasi dan perangkat keras.
 
 ## Praktikum 2.3 Identifikasi Storage dan Filesystem
 ### Tujuan praktikum : memahami disk/partisi dan filesystem yang terpasang.
@@ -105,8 +102,8 @@ Langkah - langkah :
 ### Latihan 2.3
 Dari output ls -l, jelaskan perbedaan penanda file untuk block device dan
 character device. (Hint: karakter pertama pada permission string).
-<h4>Jawaban :<h4>
-<h4>Perbedaan file penanda block device dan character device terletak pada karakter pertama baris perintah hasil ls -l. Pada perintah ls -l /dev/sda karakter pertamanya adalah huruf b yang menjadi penanda bahwa /dev/sda adalah block device. Sedangkan pada perintah ls -l /dev/tty karakter pertamanya adalah huruf c yang menjadi penanda bahwa /dev/tty adalah character device.<h4>
+#### Jawaban :
+Perbedaan file penanda block device dan character device terletak pada karakter pertama baris perintah hasil ls -l. Pada perintah ls -l /dev/sda karakter pertamanya adalah huruf b yang menjadi penanda bahwa /dev/sda adalah block device. Sedangkan pada perintah ls -l /dev/tty karakter pertamanya adalah huruf c yang menjadi penanda bahwa /dev/tty adalah character device,
 
 ## Praktikum 2.7 Melihat Informasi udev
 ### Tujuan praktikum : melihat metadata yang dipakai udev untuk membuat device node.
@@ -146,8 +143,8 @@ Digunakan untuk menampilkan baris yang bukan "INFO"
 ### Latihan 2.4
 Gunakan grep untuk menampilkan hanya baris yang mengandung INFO atau
 WARN dari data.log. (Hint: gunakan grep-E dengan pola alternatif)
-<h4>Jawaban :<h4>
-<h4>Perintah grep untuk menampilkan hanya baris yang mengandung INFO atau WARN (INFO|WARN) dari data.log adalah grep -E "INFO|WARN" data.log. grep -E digunakan untuk mengaktifkan extended regex yang berfungsi agar sistem mengenali simbol khusus seperti (|) simbol atau.<h4>
+#### Jawaban :
+Perintah grep untuk menampilkan hanya baris yang mengandung INFO atau WARN (INFO|WARN) dari data.log adalah grep -E "INFO|WARN" data.log. grep -E digunakan untuk mengaktifkan extended regex yang berfungsi agar sistem mengenali simbol khusus seperti (|) simbol atau.
 <img width="800" height="400" alt="extended regex" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/extendedregex.jpeg?raw=true"/>
 
 ## Praktikum 2.10 Substitusi dengan sed (Aman di File Latihan)
@@ -192,7 +189,9 @@ Langkah - langkah :
 <img width="600" height="300" alt="proses top" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/top.jpeg?raw=true"/>
 2. Amati nilai load average, pemakaian CPU, dan proses teratas. Tekan q untuk
 keluar.
-<h4>Load average menunjukkan nilai 0 yang berarti sistem sedang santai. CPU hanya terpakai kurang dari 1%, ditunjukkan pada bar %CPU(s).<h4>
+
+#### Hasil
+Load average menunjukkan nilai 0 yang berarti sistem sedang santai. CPU hanya terpakai kurang dari 1%, ditunjukkan pada bar %CPU(s).<h4>
 
 ## Praktikum 2.14 Menghentikan Proses dengan kill
 
@@ -222,8 +221,7 @@ Langkah - langkah :
 <img width="800" height="450" alt="journal new log error" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/servicegagal.jpeg?raw=true"/>
 
 ## Praktikum 2.16 Monitoring Port dan Koneksi (Network Basics)
-### Tujuan praktikum : melihat interface, routing, dan port yang sedang listen (berguna untuk
-troubleshooting service).
+### Tujuan praktikum : melihat interface, routing, dan port yang sedang listen (berguna untuk troubleshooting service).
 
 Langkah - langkah :
 1. Lihat interface dan IP :
@@ -235,24 +233,26 @@ Langkah - langkah :
 
 ### Latihan 2.5
 Pilih satu port yang listening dari output ss -tulpn (misal port 22), lalu tuliskan service/proses yang membukanya. Jelaskan kegunaan port tersebut secara singkat.
-<h4>Jawaban :<h4>
-<h4>Port 22<h4>
-<h4>Service/proses : systemd dengan PID 1<h4>
-<h4>Kegunaan : port 22 digunakan untuk akses remote terminal secara aman<h4>
+#### Jawaban :
+(a) Port 22
+(b) Service/proses : systemd dengan PID 1
+(c) Kegunaan : port 22 digunakan untuk akses remote terminal secara aman
 
 ## LATIHAN!
 ### Latihan 2.A
-<h4>Jalankan lspci-nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat, ID vendor:device, dan kernel driver in use.<h4>
-<h4>a. Nama perangkat (VGA compatible controller)<h4>
-<h4>b. Vendor:Device ID: 15ad:0405<h4>
-<h4>c. Kernel driver in use : vmwgfx<h4>
+<h4>Jalankan lspci-nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat, ID vendor:device, dan kernel driver in use.
+(a) Nama perangkat (VGA compatible controller)
+(b) Vendor:Device ID: 15ad:0405
+(c) Kernel driver in use : vmwgfx
 <img width="900" height="500" alt="latihan 2A" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2A.jpeg?raw=true"/>
 
 ### Latihan 2.B
 <h4>Tentukan device root filesystem dengan findmnt /. Lalu cocokkan dengan lsblk-f dan tuliskan tipe filesystem serta UUID-nya.<h4>
-<h4>Dengan perintah findmnt /, dapat diketahui bahwa device yang menangani root filesystem adalah /dev/mapper/ubuntu--vg-ubuntu--lv.<h4>
+
+#### Jawaban :
+Dengan perintah findmnt /, dapat diketahui bahwa device yang menangani root filesystem adalah /dev/mapper/ubuntu--vg-ubuntu--lv.
 <img width="800" height="400" alt="latihan 2B1" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2B1.jpeg?raw=true"/>
-<h4>Melaui lsblk -f terbukti cocok dengan tipe filesystem ext4 dan memiliki UUID 9fd8cc3f-e3fc-4cd6-9e77-4dd99991d8da.<h4>
+Melaui lsblk -f terbukti cocok dengan tipe filesystem ext4 dan memiliki UUID 9fd8cc3f-e3fc-4cd6-9e77-4dd99991d8da.
 <img width="700" height="400" alt="latihan 2B2" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2B2.jpeg?raw=true"/>
 
 ### Latihan 2.C
@@ -262,25 +262,27 @@ Pilih satu port yang listening dari output ss -tulpn (misal port 22), lalu tulis
 ### Latihan 2.D
 <h4>Gunakan sed untuk mengganti semua kata server menjadi node pada file
 latihan. Tunjukkan sebelum dan sesudah.<h4>
-<h4>sebelum sed<h4>
+(a) sebelum sed
 <img width="700" height="400" alt="latihan 2D before sed" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2D1.jpeg?raw=true"/>
-<h4>sesudah sed<h4>
+(b) sesudah sed
 <img width="700" height="400" alt="latihan 2D after sed" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2D2.jpeg?raw=true"/>
-<h4>Terlihat tidak ada perbedaan antara sebelum dan sesudah proses sed, karena dalam file tidak ada kata server yang harus diganti dengan node.<h4>
+Terlihat tidak ada perbedaan antara sebelum dan sesudah proses sed, karena dalam file tidak ada kata server yang harus diganti dengan node.
 
 ### Latihan 2.E
 <h4>Gunakan df-h lalu awk untuk menampilkan filesystem yang penggunaan disk
 di atas 70%.<h4>
 <img width="800" height="400" alt="latihan 2E" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2E.jpeg?raw=true"/>
-<h4>Muncul di terminal yang menyatakan bahwa tidak ada filesystem yang penggunaan disknya lebih dari 70%.<h4>
+Muncul di terminal yang menyatakan bahwa tidak ada filesystem yang penggunaan disknya lebih dari 70%.
 
 ### Latihan 2.F
 <h4>Jalankan sleep 600 &. Temukan PID-nya dengan ps. Hentikan dengan SIGTERM. Jelaskan beda SIGTERM vs SIGKILL<h4>
 <img width="800" height="400" alt="latihan 2F" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2F.jpeg?raw=true"/>
-<h4>Proses SIGTERM menghasilkan "Terminated" pada terminal yang berarti proses telah dihentikan sebelum 600 detik. SIGTERM adalah perintah penghentian proses secara sopan dan halus yang bersifat meminta. Sedangkan SIGKILL adalah perintah penghentian proses secara kasar yang bersifat memaksa sistem untuk langsung berhenti.<h4>
+
+#### Jawaban :
+Proses SIGTERM menghasilkan "Terminated" pada terminal yang berarti proses telah dihentikan sebelum 600 detik. SIGTERM adalah perintah penghentian proses secara sopan dan halus yang bersifat meminta. Sedangkan SIGKILL adalah perintah penghentian proses secara kasar yang bersifat memaksa sistem untuk langsung berhenti.
 
 ### Latihan 2.G
 <h4>Gunakan systemctl–failed. Jika tidak ada yang gagal, pilih satu service
 aktif (misal ssh) dan tampilkan status serta 30 baris log terakhirnya.<h4>
 <img width="900" height="500" alt="latihan 2G" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2G.jpeg?raw=true"/>
-<h4>Baris log terakhirnya masih sedikit karena ternyata ssh di sistem saya tidak otomatis menyala, jadi baru dinyalakan. Sehingga baris log yang terdahulu tidak tercatat.<h4>
+Baris log terakhirnya masih sedikit karena ternyata ssh di sistem saya tidak otomatis menyala, jadi baru dinyalakan. Sehingga baris log yang terdahulu tidak tercatat.

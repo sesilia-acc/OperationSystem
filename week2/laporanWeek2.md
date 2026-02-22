@@ -252,6 +252,7 @@ Pilih satu port yang listening dari output ss -tulpn (misal port 22), lalu tulis
 #### Jawaban :
 Dengan perintah findmnt /, dapat diketahui bahwa device yang menangani root filesystem adalah /dev/mapper/ubuntu--vg-ubuntu--lv.
 <img width="800" height="400" alt="latihan 2B1" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2B1.jpeg?raw=true"/>
+
 Melaui lsblk -f terbukti cocok dengan tipe filesystem ext4 dan memiliki UUID 9fd8cc3f-e3fc-4cd6-9e77-4dd99991d8da.
 <img width="700" height="400" alt="latihan 2B2" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2B2.jpeg?raw=true"/>
 
@@ -263,15 +264,20 @@ Melaui lsblk -f terbukti cocok dengan tipe filesystem ext4 dan memiliki UUID 9fd
 <h4>Gunakan sed untuk mengganti semua kata server menjadi node pada file
 latihan. Tunjukkan sebelum dan sesudah.<h4>
 (a) sebelum sed
+
 <img width="700" height="400" alt="latihan 2D before sed" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2D1.jpeg?raw=true"/>
+
 (b) sesudah sed
+
 <img width="700" height="400" alt="latihan 2D after sed" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2D2.jpeg?raw=true"/>
+
 Terlihat tidak ada perbedaan antara sebelum dan sesudah proses sed, karena dalam file tidak ada kata server yang harus diganti dengan node.
 
 ### Latihan 2.E
 <h4>Gunakan df-h lalu awk untuk menampilkan filesystem yang penggunaan disk
 di atas 70%.<h4>
 <img width="800" height="400" alt="latihan 2E" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2E.jpeg?raw=true"/>
+
 Muncul di terminal yang menyatakan bahwa tidak ada filesystem yang penggunaan disknya lebih dari 70%.
 
 ### Latihan 2.F
@@ -285,4 +291,5 @@ Proses SIGTERM menghasilkan "Terminated" pada terminal yang berarti proses telah
 <h4>Gunakan systemctl–failed. Jika tidak ada yang gagal, pilih satu service
 aktif (misal ssh) dan tampilkan status serta 30 baris log terakhirnya.<h4>
 <img width="900" height="500" alt="latihan 2G" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2G.jpeg?raw=true"/>
+
 Baris log terakhirnya masih sedikit karena ternyata ssh di sistem saya tidak otomatis menyala, jadi baru dinyalakan. Sehingga baris log yang terdahulu tidak tercatat.

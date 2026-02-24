@@ -17,8 +17,12 @@ Langkah - langkah :
 
 ### Latihan 2.1
 Catat :
-1. Informasi CPU : (a) Jumlah CPU(s) = 1 (b) Core/Thread = 1
-2. Penggunaan memori : (a) Total RAM = 1.9Gi (b) Total Swap = 2.0Gi
+1. Informasi CPU : 
+    * (a) Jumlah CPU(s) = 1
+    * (b) Core/Thread = 1
+2. Penggunaan memori :
+    * (a) Total RAM = 1.9Gi
+    * (b) Total Swap = 2.0Gi
 3. Perbedaan RAM Vs Swap :
     RAM adalah tempat penyimpanan data sementara yang bekerja untuk meproses aplikasi yang sedang berjalan, dan isinya akan hilang saat komputer mati. Sedangkan swap adalah media penyimpanan cadangan yang berfungsi untuk membantu sistem tetap berjalan apabila kapasitas RAM mulai penuh, cara kerja swap lebih lambat dibandingkan dengan RAM.
 
@@ -41,10 +45,10 @@ Langkah - langkah :
 Temukan 1 perangkat PCI (misal NIC) dan tuliskan: Vendor:Device ID (angka
 heksadesimal), nama driver/modul kernel, dan deskripsi singkat fungsinya.
 #### Jawaban :
-(a) Nama perangkat NIC (Ethernet Controller)
-(b) Vendor:Device ID: 8086:100e
-(c) Nama driver/modul kernel : e1000
-(d) Deskripsi fungsi : NIC berperan sebagai jembatan antara komputer dengan jaringan komputer yang biasanya dikirim melalui kabel LAN (ethernet). Vendor:Device ID adalah identitas dari perangkat yang terpasang, tujuannya adalah agar sistem operasi dapat mengenali perangkat dan tidak salah memberikan perintah. Sedangkan driver bertugas sebagai penerjemah antara sistem operasi dan perangkat keras.
+* (a) Nama perangkat NIC (Ethernet Controller)
+* (b) Vendor:Device ID: 8086:100e
+* (c) Nama driver/modul kernel : e1000
+* (d) Deskripsi fungsi : NIC berperan sebagai jembatan antara komputer dengan jaringan komputer yang biasanya dikirim melalui kabel LAN (ethernet). Vendor:Device ID adalah identitas dari perangkat yang terpasang, tujuannya adalah agar sistem operasi dapat mengenali perangkat dan tidak salah memberikan perintah. Sedangkan driver bertugas sebagai penerjemah antara sistem operasi dan perangkat keras.
 
 ## Praktikum 2.3 Identifikasi Storage dan Filesystem
 ### Tujuan praktikum : memahami disk/partisi dan filesystem yang terpasang.
@@ -234,16 +238,16 @@ Langkah - langkah :
 ### Latihan 2.5
 Pilih satu port yang listening dari output ss -tulpn (misal port 22), lalu tuliskan service/proses yang membukanya. Jelaskan kegunaan port tersebut secara singkat.
 #### Jawaban :
-(a) Port 22
-(b) Service/proses : systemd dengan PID 1
-(c) Kegunaan : port 22 digunakan untuk akses remote terminal secara aman
+* (a) Port 22
+* (b) Service/proses : systemd dengan PID 1
+* (c) Kegunaan : port 22 digunakan untuk akses remote terminal secara aman
 
 ## LATIHAN!
 ### Latihan 2.A
 <h4>Jalankan lspci-nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat, ID vendor:device, dan kernel driver in use.
-(a) Nama perangkat (VGA compatible controller)
-(b) Vendor:Device ID: 15ad:0405
-(c) Kernel driver in use : vmwgfx
+* (a) Nama perangkat (VGA compatible controller)
+* (b) Vendor:Device ID: 15ad:0405
+* (c) Kernel driver in use : vmwgfx
 <img width="900" height="500" alt="latihan 2A" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2A.jpeg?raw=true"/>
 
 ### Latihan 2.B
@@ -251,9 +255,11 @@ Pilih satu port yang listening dari output ss -tulpn (misal port 22), lalu tulis
 
 #### Jawaban :
 Dengan perintah findmnt /, dapat diketahui bahwa device yang menangani root filesystem adalah /dev/mapper/ubuntu--vg-ubuntu--lv.
+
 <img width="800" height="400" alt="latihan 2B1" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2B1.jpeg?raw=true"/>
 
 Melaui lsblk -f terbukti cocok dengan tipe filesystem ext4 dan memiliki UUID 9fd8cc3f-e3fc-4cd6-9e77-4dd99991d8da.
+
 <img width="700" height="400" alt="latihan 2B2" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2B2.jpeg?raw=true"/>
 
 ### Latihan 2.C
@@ -263,15 +269,13 @@ Melaui lsblk -f terbukti cocok dengan tipe filesystem ext4 dan memiliki UUID 9fd
 ### Latihan 2.D
 <h4>Gunakan sed untuk mengganti semua kata server menjadi node pada file
 latihan. Tunjukkan sebelum dan sesudah.<h4>
-(a) sebelum sed
+* (a) sebelum sed
 
 <img width="700" height="400" alt="latihan 2D before sed" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2D1.jpeg?raw=true"/>
 
-(b) sesudah sed
+* (b) sesudah sed
 
-<img width="700" height="400" alt="latihan 2D after sed" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2D2.jpeg?raw=true"/>
-
-Terlihat tidak ada perbedaan antara sebelum dan sesudah proses sed, karena dalam file tidak ada kata server yang harus diganti dengan node.
+<img width="700" height="400" alt="latihan 2D after sed" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week2/images2/lat2D2.jpeg?raw=trues"/>
 
 ### Latihan 2.E
 <h4>Gunakan df-h lalu awk untuk menampilkan filesystem yang penggunaan disk

@@ -156,7 +156,7 @@
 
 2. Perintah which
 > $ which ls
-<img width="900" height="500" alt="which" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/5.1.jpeg?raw=true"/>
+<img width="800" height="500" alt="which" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/5.2.jpeg?raw=true"/>
 
 3. Perintah locate
 > $ locate "*.txt"
@@ -164,4 +164,4 @@
 
 ### Percobaan 6: Mencari text pada file
 > $ grep Hallo *.txt
-<img width="900" height="500" alt="cari text" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/5.4.jpeg?raw=true"/>
+<img width="800" height="500" alt="cari text" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/5.4.jpeg?raw=true"/>

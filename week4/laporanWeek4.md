@@ -84,7 +84,7 @@
 > $ cp contoh contoh1 A/D
 >
 > $ ls -l A/D
-<img widht="800" height="100" alt="copy file" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/2.1.jpeg?raw=true"/>
+<img widht="800" height="600" alt="copy file" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/2.1.jpeg?raw=true"/>
 
 2. Perintah mv untuk memindah file
 > $ mv contoh contoh2
@@ -135,7 +135,7 @@
 > $ ls -l bye.txt
 >
 > $ cat bye.txt
-<img width="700" height="300" alt="membuat shortcut" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/3.jpeg?raw=true"/>
+<img width="700" height="600" alt="membuat shortcut" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/3.jpeg?raw=true"/>
 
 ### Percobaan 4: Melihat isi file
 > $ ls -l
@@ -164,4 +164,4 @@
 
 ### Percobaan 6: Mencari text pada file
 > $ grep Hallo *.txt
-<img width="900" height="500" alt="cari text" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/5.3.jpeg?raw=true"/>
+<img width="900" height="500" alt="cari text" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/5.4.jpeg?raw=true"/>

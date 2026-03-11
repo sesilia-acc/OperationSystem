@@ -265,7 +265,7 @@ Copy file /etc/passwd ke directory home
 > $ cp /etc/passwd ~
 Pindahkan ke subdirectory play
 > mv ~/passwd ~/play/
-<img width="800" height="400" alt="latihan 9 & 10" src=""/>
+<img width="800" height="400" alt="latihan 9 & 10" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/lat9&10.jpeg?raw=true"/>
 
 #### Latihan 11 - 15
 11. Membuat symbolic link ke tty dalam directory play
@@ -282,4 +282,30 @@ Pindahkan ke subdirectory play
 > $ ln -s play work 
 15. Hapus direktori work (link-nya)
 > $ rm work
-<img width="800" height="400" alt="latihan 11 - 15e" src=""/>
+<img width="800" height="400" alt="latihan 11 - 15e" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/lat11-15.jpeg?raw=true"/>
+
+### Laporan Resmi
+a. Analisa tampilan
+- ls            : Menampilkan daftar isi direktori secara halaman demi halaman.
+- cd dan pwd    : Digunakan untuk navigasi.
+- cat /proc/    : Menampilkan informasi real-time kernel.
+- ln -s         : bertindak sebagai jalan pintas (shortcut) yang menunjuk ke lokasi lain.
+
+b. Pohon struktur direktory berdasarkan percobaan 1.3
+Berdasarkan instruksi mkdir ABCA/D A/E B/F A/D/A: / (Home)
+
+├── A/
+
+│ ├── D/
+
+│ │ └── A/
+
+│ └── E/
+
+├── B/
+
+│ └── F/
+
+└── C/
+
+c. 

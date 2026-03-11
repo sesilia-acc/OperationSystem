@@ -165,3 +165,121 @@
 ### Percobaan 6: Mencari text pada file
 > $ grep Hallo *.txt
 <img width="800" height="500" alt="cari text" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/5.4.jpeg?raw=true"/>
+
+### Latihan
+#### Latihan 1
+> $ cd (pindah ke home direktori)
+>
+> pwd (melihat path direktori saat ini)
+>
+> $ ls -al (melihat semua file termasuk yg tersembunyi)
+<img width="700" height="400" alt="perintah cd" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/cd.jpeg?raw=true"/>
+
+> $ cd . (pindah ke direktori aktif (tidak berubah))
+>
+> $ pwd 
+>
+> $ cd .. (pindah ke parent direktory (satu level diatas))
+>
+> $ pwd
+>
+> $ ls -al
+<img width="700" height="500" alt="perintah cd ." src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/cd1.jpeg?raw=true"/>
+
+> $ cd ..
+>
+> $ pwd
+>
+> $ ls -al
+<img width="800" height="400" alt="perintah cd .." src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/cd2.jpeg?raw=true"/>
+
+> $ cd /etc
+>
+> $ ls -al | more
+<img width="800" height="500" alt="perintah cd /etc" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/etc.jpeg?raw=true"/>
+
+> $ cat passwd
+<img width="700" height="500" alt="perintah cat passws" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/passwd.jpeg?raw=true"/>
+
+> $ cd - (kembali ke direktori sebelumnya)
+>
+> $ pwd
+<img width="800" height="600" alt="" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/cd-.jpeg?raw=true"/>
+
+#### Latihan 2 & 3
+menelusuri direktori bin dan sistem
+
+> $ ls /bin
+<img width="700" height="500" alt="direktori bin" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/bin.jpeg?raw=true"/>
+
+> $ ls /usr/bin
+<img width="700" height="500" alt="direktori usr/bin" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/usrbin.jpeg?raw=true"/>
+
+> $ ls /sbin
+<img width="700" height="500" alt="direktori sbin" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/sbin.jpeg?raw=true"/>
+
+> $ ls /tmp
+<img width="700" height="500" alt="direktori tmp" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/tmp.jpeg?raw=true"/>
+
+> $ ls /boot
+<img width="700" height="500" alt="direktori boot" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/boot.jpeg?raw=true"/>
+
+#### Latihan 4
+Menelusuri directory /proc
+
+> $ cat interrupts
+<img width="800" height="500" alt="menampilkan isi interrupts" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/interrupts.jpeg?raw=true"/>
+
+> $ cat devices
+<img width="800" height="500" alt="menampilkan isi devices" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/devices.jpeg?raw=true"/>
+
+> $ cat cpuinfo
+<img width="800" height="650" alt="menampilkan isi cpuinfo" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/cpuinfo.jpeg?raw=true"/>
+
+> $ cat meminfo
+<img width="800" height="650" alt="menampilkan isi meminfo" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/meminfo.jpeg?raw=true"/>
+
+> $ uptime
+<img width="800" height="400" alt="menampilkan isi uptime" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/uptime.jpeg?raw=true"/>
+
+> /proc disebut *pseudo-filesystem* karena file didalamnya tidak benar benar tersimpan di hard disk saat menjalankan perintah cat di file /proc, sistem tidak membaca dari hard disk, namun kernel menulis isi data tersebut secara real time dari memori ke terminal.
+
+#### Latihan 5 & 6
+Ubah directory ke home user lain (salsabilawidyadhana)
+<img width="800" height="500" alt="directory user lain" src=""/>
+
+> tidak dapat masuk ke directory lain karena user tidak ada di sistem
+
+kembali ke home directory sendiri
+> cd~
+
+#### Latihan 7 & 8
+Membuat subdirectory work dan play
+> $ mkdir work play
+hapus subdirectory work
+> $ rmdir work
+<img width="800" height="400" alt="remove work" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week4/images4/mdanr.jpeg?raw=true"/>
+
+#### Latihan 9 & 10
+Copy file /etc/passwd ke directory home
+> $ cp /etc/passwd ~
+Pindahkan ke subdirectory play
+> mv ~/passwd ~/play/
+<img width="800" height="400" alt="latihan 9 & 10" src=""/>
+
+#### Latihan 11 - 15
+11. Membuat symbolic link ke tty dalam directory play
+> $ cd ~/play
+>
+> $ ln -s /dev/tty terminal
+12. Membuat file hello.txt
+> $ echo "Hello World" > hello.txt
+13. Copy isi file ke terminal
+> $ cp hello.txt terminal
+14.  Copy direktori play ke work menggunakan symbolic link
+> $ cd ~ 
+>
+> $ ln -s play work 
+15. Hapus direktori work (link-nya)
+> $ rm work
+<img width="800" height="400" alt="latihan 11 - 15e" src=""/>

@@ -10,18 +10,21 @@ Tujuan: membuat, menyimpan, dan menjalankan script Bash pertama.
 > mkdir-p ~/praktikum-os/week09/{scripts,logs,data}
 >
 > cd ~/praktikum-os/week09/scripts
+
 <img width="700" height="400" alt="Menyiapkan workspace" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week9/image9/workspace91.png?raw=true"/>
 
 2. Buat script dengan nano:
 > nano laporan-sistem.sh
 
 3. Ketik isi berikut, simpan ( Ctrl+O Enter), lalu keluar (Ctrl+X ):
+
 <img width="700" height="400" alt="Isi laporan-sistem.sh" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week9/image9/scriptnano.png?raw=true"/>
 
 4. Beri izin dan jalankan:
 > chmod +x laporan-sistem.sh
 >
 > ./laporan-sistem.sh
+
 <img width="700" height="400" alt="Menjalankan script" src="https://github.com/sesilia-acc/OperationSystem/blob/main/week9/image9/runnano.png?raw=true"/>
 
 ### Latihan 9.1
